@@ -59,7 +59,7 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer
+  m_Name: Zombie Layer
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -7874003144083149336}
@@ -72,7 +72,7 @@ AnimatorStateMachine:
     m_Position: {x: 310, y: 300, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3976007697895848467}
-    m_Position: {x: 693.32263, y: 312.60287, z: 0}
+    m_Position: {x: 700, y: 310, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5362254272919821305}
     m_Position: {x: 37.038696, y: 298.78296, z: 0}
@@ -152,7 +152,7 @@ AnimatorController:
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: Base Layer
+    m_Name: Zombie Layer
     m_StateMachine: {fileID: -6599025746125194620}
     m_Mask: {fileID: 0}
     m_Motions: []

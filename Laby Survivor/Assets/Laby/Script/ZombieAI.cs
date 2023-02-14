@@ -22,7 +22,7 @@ public class ZombieAI : MonoBehaviour{
                 agent.angularSpeed = 250;
                 //on change l'animation
                 GetComponent<Animator>().Play("Z_Walk");
-            }else if( distance > 1.2f){
+            }else if( distance > 1.1f){
                 //si la distance entre le joueur et l'agent est inférieure à 12 et supérieure à 1.1
                 //on court vers le joueur
                 agent.speed = 1.5f;
