@@ -4,14 +4,17 @@ using UnityEngine.AI;
 public class ZombieAI : MonoBehaviour{
     public GameObject player; 
     NavMeshAgent agent;
+    public float distance;
+    public float health;
 
     void Start(){
         agent = GetComponent<NavMeshAgent>();
+        health = 100;
     }
 
     void Update(){
         //on repere le joueur si il est dans le champ de vision de l'agent qui sera de 25 
-        float distance = Vector3.Distance(player.transform.position, transform.position);
+        distance = Vector3.Distance(player.transform.position, transform.position);
         if (distance <= 20){
             //on donne la position du joueur à l'agent
             agent.SetDestination(player.transform.position);
@@ -50,6 +53,18 @@ public class ZombieAI : MonoBehaviour{
 
         //si le zombie meurt
             //GetComponent<Animator>().Play("Z_FallingBack");
+    }
+
+    public void TakeDamage(float damage){
+        health -= damage;
+        if (health <= 0){
+            //on arrete le mouvement de l'agent
+            agent.SetDestination(transform.position);
+            //on change l'animation
+            GetComponent<Animator>().Play("Z_FallingBack");
+            //on detruit le zombie
+            Destroy(gameObject, 2);
+        }
     }
  
 }

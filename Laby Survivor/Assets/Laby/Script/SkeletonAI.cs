@@ -9,12 +9,13 @@ public class SkeletonAI : MonoBehaviour
     public GameObject player; 
     UnityEngine.AI.NavMeshAgent agent;
     public float distance;
-
+    public float health;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        health = 100;
     }
 
     // Update is called once per frame
@@ -47,5 +48,17 @@ public class SkeletonAI : MonoBehaviour
             GetComponent<Animator>().Play("DS_onehand_idle_A");
         }
 
+    }
+
+    public void TakeDamage(float damage){
+        if (health > 0){
+        health -= damage;
+            if (health <= 0){
+                //on arrete le mouvement de l'agent
+                agent.SetDestination(transform.position);
+                //on detruit le zombie
+                Destroy(gameObject, 2);
+            }
+        }
     }
 }
