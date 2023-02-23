@@ -3,19 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class SkeletonAI : MonoBehaviour
-{
+public class SkeletonAI : Perso{
     
     public GameObject player; 
-    UnityEngine.AI.NavMeshAgent agent;
+    NavMeshAgent agent;
     public float distance;
-    public float health;
 
     // Start is called before the first frame update
     void Start()
     {
-        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        health = 100;
+        agent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
@@ -50,7 +47,7 @@ public class SkeletonAI : MonoBehaviour
 
     }
 
-    public void TakeDamage(float damage){
+    public override void TakeDamage(float damage){
         if (health > 0){
         health -= damage;
             if (health <= 0){
@@ -61,4 +58,5 @@ public class SkeletonAI : MonoBehaviour
             }
         }
     }
+
 }

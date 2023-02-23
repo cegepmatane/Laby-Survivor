@@ -12,8 +12,8 @@ public class Weapon : MonoBehaviour
 
         // If weapon hit an enemy
         if (collision.gameObject.layer == 8) {
-            if (collision.gameObject.canBeAttacked) {
-                collision.gameObject.TakeDamage(damage);
+            if (collision.gameObject.GetComponent<Perso>().canBeAttacked) {
+                collision.gameObject.GetComponent<Perso>().TakeDamage(damage);
                 audiosource.Play();
             }
         }
