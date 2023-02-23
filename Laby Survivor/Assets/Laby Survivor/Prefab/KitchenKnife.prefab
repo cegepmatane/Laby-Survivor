@@ -65,7 +65,12 @@ PrefabInstance:
     - target: {fileID: 8037205833366024871, guid: 9768cced4db1b9048bfc47898736275f,
         type: 3}
       propertyPath: m_Name
-      value: Knife_002
+      value: KitchenKnife
+      objectReference: {fileID: 0}
+    - target: {fileID: 8037205833366024871, guid: 9768cced4db1b9048bfc47898736275f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9768cced4db1b9048bfc47898736275f, type: 3}

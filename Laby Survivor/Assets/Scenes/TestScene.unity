@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -189,6 +189,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scythe_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2649784652027080775, guid: ee5820ed07d85634a8e3ce390f32301e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee5820ed07d85634a8e3ce390f32301e, type: 3}
@@ -3024,7 +3029,7 @@ PrefabInstance:
     - target: {fileID: 6484345089471719550, guid: 283d35cd913352c42889949dc2c1d995,
         type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 283d35cd913352c42889949dc2c1d995, type: 3}
@@ -3177,6 +3182,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knife_002
       objectReference: {fileID: 0}
+    - target: {fileID: 7478428219601429047, guid: fe47802c85ac836459fbf7ccf51073ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe47802c85ac836459fbf7ccf51073ac, type: 3}
 --- !u!1001 &844439049534107633
@@ -3198,7 +3208,7 @@ PrefabInstance:
     - target: {fileID: 538572710827655591, guid: 10eb8d4b6532f644f84890cec9999025,
         type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 878964620921559837, guid: 10eb8d4b6532f644f84890cec9999025,
         type: 3}
@@ -3331,7 +3341,7 @@ PrefabInstance:
     - target: {fileID: 1874395130875790594, guid: bdfb849283493bd428c801f014304d71,
         type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdfb849283493bd428c801f014304d71, type: 3}
@@ -3350,6 +3360,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Knife_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2909340413987363527, guid: d8a3173c654328e439d55555e6a4165d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2909340413987363530, guid: d8a3173c654328e439d55555e6a4165d,
         type: 3}
@@ -3427,7 +3442,7 @@ PrefabInstance:
     - target: {fileID: 3970442466243700812, guid: 288faa488d21c3d458a34321ff772b66,
         type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4346546278120076022, guid: 288faa488d21c3d458a34321ff772b66,
         type: 3}
@@ -3634,7 +3649,7 @@ PrefabInstance:
     - target: {fileID: 6484345089471719550, guid: 283d35cd913352c42889949dc2c1d995,
         type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 283d35cd913352c42889949dc2c1d995, type: 3}
@@ -3708,6 +3723,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Axe_002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415983341876083853, guid: b76c480863394cd42acdae61467f6434,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b76c480863394cd42acdae61467f6434, type: 3}
@@ -3785,7 +3805,7 @@ PrefabInstance:
     - target: {fileID: 7782867069035888788, guid: 739b4e2f8fe583146b955055164f801a,
         type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 739b4e2f8fe583146b955055164f801a, type: 3}
@@ -3933,6 +3953,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knife_003
       objectReference: {fileID: 0}
+    - target: {fileID: 1023980709799645340, guid: c814996466b01fd4fbb8a68a1477991d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c814996466b01fd4fbb8a68a1477991d, type: 3}
 --- !u!1001 &8589930485260092732
@@ -3950,6 +3975,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Axe_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2790552127210005211, guid: a79f42ad4a3612f4b9734e2c5be632e0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2790552127210005214, guid: a79f42ad4a3612f4b9734e2c5be632e0,
         type: 3}

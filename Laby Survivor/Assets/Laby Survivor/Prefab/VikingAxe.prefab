@@ -10,7 +10,12 @@ PrefabInstance:
     - target: {fileID: 7296429424415500824, guid: f5be236085efc2842b05013f43a80bef,
         type: 3}
       propertyPath: m_Name
-      value: Axe_002
+      value: VikingAxe
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296429424415500824, guid: f5be236085efc2842b05013f43a80bef,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7296429424415500831, guid: f5be236085efc2842b05013f43a80bef,
         type: 3}

@@ -65,7 +65,12 @@ PrefabInstance:
     - target: {fileID: 5877083285060104647, guid: 4c6dad318ef6a394c9ace62c5fd9f862,
         type: 3}
       propertyPath: m_Name
-      value: Axe_001
+      value: Hatchet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877083285060104647, guid: 4c6dad318ef6a394c9ace62c5fd9f862,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c6dad318ef6a394c9ace62c5fd9f862, type: 3}

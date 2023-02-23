@@ -72,6 +72,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigAxe
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 775c96f25b29a464c96e04f3e961ff06,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 775c96f25b29a464c96e04f3e961ff06, type: 3}
 --- !u!1 &6484345089471719550 stripped
