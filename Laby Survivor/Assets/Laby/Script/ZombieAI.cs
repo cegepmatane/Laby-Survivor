@@ -1,15 +1,13 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ZombieAI : MonoBehaviour{
+public class ZombieAI : Perso{
     public GameObject player; 
     NavMeshAgent agent;
     public float distance;
-    public float health;
 
     void Start(){
         agent = GetComponent<NavMeshAgent>();
-        health = 100;
     }
 
     void Update(){
@@ -55,7 +53,7 @@ public class ZombieAI : MonoBehaviour{
             //GetComponent<Animator>().Play("Z_FallingBack");
     }
 
-    public void TakeDamage(float damage){
+    public override void TakeDamage(float damage){
         health -= damage;
         if (health <= 0){
             //on arrete le mouvement de l'agent
