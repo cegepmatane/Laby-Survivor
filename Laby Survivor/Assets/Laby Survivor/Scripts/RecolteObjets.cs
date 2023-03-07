@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class RecolteObjets : MonoBehaviour
 {
+    public string itemType;
+
+    /*
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var ennemie = collision.gameObject.GetComponent<Ennemie>();
@@ -16,5 +19,5 @@ public class RecolteObjets : MonoBehaviour
         {
             Destroy(gameObject, 5);
         }
-    }   
+    }*/
 }

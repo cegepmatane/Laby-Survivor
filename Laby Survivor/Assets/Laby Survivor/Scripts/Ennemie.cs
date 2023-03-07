@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Ennemie : MonoBehaviour
 {
+    public List<string> inventaire;
+
     public float vitesse = 2f;
     bool gauche = false;
     float tempMarche = 0f;
@@ -17,8 +19,11 @@ public class Ennemie : MonoBehaviour
     {
         arretAleatoire = Random.Range(0, 10);
         tempArretAleatoire = Random.Range(0, 4);
+
+        inventaire = new List<string>();
       
     }
+
     void Update()
     {
         tempActuel += Time.deltaTime;
@@ -52,5 +57,19 @@ public class Ennemie : MonoBehaviour
     public void dead()
     {
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Collecte"))
+        {
+            string itemType = collision.gameObject.GetComponent<RecolteObjets>().itemType;
+            print("Vous avez recolte un item:" + itemType);
+
+            inventaire.Add(itemType);
+            print("Inventaire:" + inventaire.Count);
+            //items.Add(itemType);
+            Destroy(collision.gameObject);
+        }
     }
 }
