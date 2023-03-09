@@ -6,7 +6,7 @@ public class PlayerPrincipal : MonoBehaviour{
 
     public List<string> inventaire;
 
-    public void start()
+    void Start()
     {
         inventaire = new List<string>();
     }
