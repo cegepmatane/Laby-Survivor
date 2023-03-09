@@ -5,10 +5,12 @@ using UnityEngine;
 public class Perso : MonoBehaviour{
     public float health = 50;
     public float atk = 10;
+    protected float maxHP;
     public bool canBeAttacked = true;
     public int secondsBeforeAttack = 2;
     // Start is called before the first frame update
     void Start(){
+         maxHP = health;
     }
 
     // Update is called once per frame
@@ -50,6 +52,10 @@ public class Perso : MonoBehaviour{
     IEnumerator attack(){
         yield return new WaitForSeconds(secondsBeforeAttack);
         canBeAttacked = true;
+    }
+
+    public float getMaxHP() {
+        return maxHP;
     }
 
 }
