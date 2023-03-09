@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PersoTest : MonoBehaviour{
+public class Personnage : MonoBehaviour{
     public float health = 50;
     public float atk = 10;
     public bool canBeAttacked = true;

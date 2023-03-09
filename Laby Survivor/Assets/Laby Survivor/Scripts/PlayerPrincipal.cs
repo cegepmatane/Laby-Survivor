@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : Perso{
+public class PlayerPrincipal : MonoBehaviour{
 
     public List<string> inventaire;
 
