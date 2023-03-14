@@ -11,7 +11,7 @@ public class PlayerPrincipal : MonoBehaviour{
         inventaire = new List<string>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Collecte"))
         {
