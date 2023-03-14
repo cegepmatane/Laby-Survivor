@@ -6,12 +6,12 @@ public class PlayerPrincipal : MonoBehaviour{
 
     public List<string> inventaire;
 
-    public void start()
+    void Start()
     {
         inventaire = new List<string>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Collecte"))
         {
