@@ -7,7 +7,7 @@ public class Perso : MonoBehaviour{
     public float atk = 10;
     protected float maxHP;
     public bool canBeAttacked = true;
-    public int secondsBeforeAttack = 2;
+    public int secondsBeforeAttack = 1;
     // Start is called before the first frame update
     void Start(){
          maxHP = health;
