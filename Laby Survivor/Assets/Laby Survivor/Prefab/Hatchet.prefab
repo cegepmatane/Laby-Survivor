@@ -72,6 +72,36 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5877083285358431633, guid: 4c6dad318ef6a394c9ace62c5fd9f862,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877083285419598371, guid: 4c6dad318ef6a394c9ace62c5fd9f862,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877083285509425433, guid: 4c6dad318ef6a394c9ace62c5fd9f862,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877083286394006732, guid: 4c6dad318ef6a394c9ace62c5fd9f862,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877083286656889518, guid: 4c6dad318ef6a394c9ace62c5fd9f862,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877083286727243565, guid: 4c6dad318ef6a394c9ace62c5fd9f862,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c6dad318ef6a394c9ace62c5fd9f862, type: 3}
 --- !u!4 &1828440876440394343 stripped
@@ -299,7 +329,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
