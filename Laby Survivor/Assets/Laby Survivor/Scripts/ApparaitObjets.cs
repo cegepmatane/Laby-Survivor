@@ -6,7 +6,7 @@ public class ApparaitObjets : MonoBehaviour
 {
     public GameObject CeriseApparait;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter(Collider other)
     {
         Instantiate(CeriseApparait, transform.position, transform.rotation);
     }
