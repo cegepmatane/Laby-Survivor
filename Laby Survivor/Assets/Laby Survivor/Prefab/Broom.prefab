@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 5317508617724735889, guid: 38d1f175409165443ba83b93603c8f6e,
         type: 3}
       propertyPath: m_Name
-      value: Broom_001
+      value: Broom
       objectReference: {fileID: 0}
     - target: {fileID: 5317508617724735890, guid: 38d1f175409165443ba83b93603c8f6e,
         type: 3}
@@ -213,7 +213,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 1
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
