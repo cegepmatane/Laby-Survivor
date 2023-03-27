@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
+using System.Collections.Generic;
 
 public class ZombieAI : Perso{
     public GameObject player; 
     NavMeshAgent agent;
     public float distance;
+    public AudioSource audiosource;
 
     void Start(){
         agent = GetComponent<NavMeshAgent>();
@@ -46,6 +49,9 @@ public class ZombieAI : Perso{
                     //on attaque le joueur 
                     //on change l'animation
                     GetComponent<Animator>().Play("Z_Attack");
+                    if (player.GetComponent<Perso>().canBeAttacked){
+                        audiosource.Play();
+                    }
                     player.GetComponent<Perso>().TakeDamage(atk);
                     //on regle la vitesse d'attaque
                     agent.speed = 0;

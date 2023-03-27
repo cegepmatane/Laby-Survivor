@@ -8,6 +8,7 @@ public class SkeletonAI : Perso{
     public GameObject player; 
     NavMeshAgent agent;
     public float distance;
+    public AudioSource audiosource;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,7 @@ public class SkeletonAI : Perso{
         }else{
             distance = Vector3.Distance(player.transform.position, transform.position);
             if (distance < 10){
-                if( distance > 2.5f){
+                if( distance > 2.0f){
                     agent.SetDestination(player.transform.position);
                     //on regle la vitesse
                     agent.speed = 0.7f;
@@ -42,6 +43,9 @@ public class SkeletonAI : Perso{
                     //on attaque le joueur 
                     //on change l'animation
                     GetComponent<Animator>().Play("DS_onehand_attack_A");
+                    if (player.GetComponent<Perso>().canBeAttacked){
+                        audiosource.Play();
+                    }
                     player.GetComponent<Perso>().TakeDamage(atk);
                     //on regle la vitesse d'attaque
                     agent.speed = 0;
