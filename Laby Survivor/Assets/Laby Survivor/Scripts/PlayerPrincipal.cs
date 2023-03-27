@@ -15,7 +15,6 @@ public class PlayerPrincipal : MonoBehaviour{
 
             inventaire.Add(itemType);
             print("Inventaire:" + inventaire.Count);
-            //items.Add(itemType);
             Destroy(collision.gameObject);
         }
     }
