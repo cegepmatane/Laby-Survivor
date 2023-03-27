@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 102
+  controlID: 40
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: AnimationWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -147,15 +147,15 @@ MonoBehaviour:
     y: 484
     width: 1169.6
     height: 238.79999
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 21}
   - {fileID: 14}
-  m_Selected: 2
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 20131
+  controlID: 41
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 20132
+  controlID: 42
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -337,6 +337,9 @@ MonoBehaviour:
   m_ViewTransforms:
     m_KeySerializationHelper:
     - {fileID: 4482944980029594306, guid: e756bafee5bc4cc4ba3a265bb2d86c4d, type: 2}
+    - {fileID: -6599025746125194620, guid: 5a60fe37bf765bc4c95ef6138d0c7be7, type: 2}
+    - {fileID: 4649477905782114841, guid: 2ef8e6599b7f9934e8ff0d64c5325a1f, type: 2}
+    - {fileID: 1176065830413541270, guid: 994c1633f6734e944826f0cb00eec584, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.78273684
       e01: 0
@@ -354,11 +357,59 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+    - e00: 0.1
+      e01: 0
+      e02: 0
+      e03: 6.9480667
+      e10: 0
+      e11: 0.1
+      e12: 0
+      e13: 188.46436
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.1
+      e01: 0
+      e02: 0
+      e03: 6.300003
+      e10: 0
+      e11: 0.1
+      e12: 0
+      e13: 176
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.1
+      e01: 0
+      e02: 0
+      e03: 6.300003
+      e10: 0
+      e11: 0.1
+      e12: 0
+      e13: 193.12642
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: e756bafee5bc4cc4ba3a265bb2d86c4d,
+  m_AnimatorController: {fileID: 9100000, guid: 5a60fe37bf765bc4c95ef6138d0c7be7,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 4482944980029594306, guid: e756bafee5bc4cc4ba3a265bb2d86c4d,
+  - m_Target: {fileID: -6599025746125194620, guid: 5a60fe37bf765bc4c95ef6138d0c7be7,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -403,7 +454,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -72250
+  m_LastSelectedObjectID: 64072
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -475,23 +526,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Laby Survivor/Scene
+    - Assets/Laby
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Laby Survivor/Scene
+  - Assets/Laby
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: "C:\\Users\\mijat\\Documents\\COURS_BUT_2A\\MATANE\\R\xE9alit\xE9s_virtuelles\\realites-virtuelles-2023-Moueben99\\Laby
-    Survivor"
+  m_LastProjectPath: C:\Users\zhaoz\OneDrive\Bureau\Cours\Cegep Matane\S4\VR\realites-virtuelles-2023-Moueben99\Laby
+    Survivor
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 351}
-    m_SelectedIDs: 8c7b0000
-    m_LastClickedID: 31628
-    m_ExpandedIDs: 00000000fe7900005e7b0000607b0000667b00008e7b0000e0880000ee880000ca96000000ca9a3b
+    scrollPos: {x: 0, y: 190.20001}
+    m_SelectedIDs: 10e00000
+    m_LastClickedID: 57360
+    m_ExpandedIDs: 00000000fadf00000ee0000010e0000018e000001ae000002ce0000090e80000f2f60000f4f60000f6f6000064070100a6130100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -519,7 +570,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fe790000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -544,9 +595,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: dae2feff
-    m_LastClickedInstanceID: -72998
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000000000008c760000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -649,9 +700,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c6e5feff
-      m_LastClickedID: -72250
-      m_ExpandedIDs: c6e3feffeee5feffe6e8feff8cf0feff90f0feffa8f0feffbef0feffc0f0feffa256ffffb46dffff767dffffea8affffee8bffffdca7ffffb2bdffff26c3ffff58c3ffff68c3ffff80c3ffff98c3fffffed0ffff2ad1ffff3ad1ffff84d1ffff96d1ffff9cd1ffffe4d1ffffc2d5ffff32fbffff3a6700007e6a0000de6e000062b90000c2bd0000cc270100
+      m_SelectedIDs: 2ae00000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 5605ffff2814ffffa015ffff9a26ffffb245ffffde45ffff7e49ffff1a4bffffbc50ffff5656ffff1058ffff0476ffff7e7dffff807fffff2a85ffffbe86ffff708cffff3c8effffa0e7000060fa0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -934,9 +985,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.325405, y: -3.924637, z: -15.3395}
+    m_Target: {x: 0.36884806, y: 1.1244183, z: -9.1129675}
     speed: 2
-    m_Value: {x: 4.325405, y: -3.924637, z: -15.3395}
+    m_Value: {x: 0.36884856, y: 1.1244181, z: -9.112969}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -983,13 +1034,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.007175393, y: 0.9885367, z: -0.14305703, w: 0.050467286}
+    m_Target: {x: 0.046853717, y: 0.9417271, z: -0.2987915, w: 0.14814635}
     speed: 2
-    m_Value: {x: 0.0073889787, y: 0.9883272, z: -0.14302692, w: 0.05194306}
+    m_Value: {x: 0.046847418, y: 0.9416005, z: -0.29875132, w: 0.14812642}
   m_Size:
-    m_Target: 12.124355
+    m_Target: 1.2605019
     speed: 2
-    m_Value: 12.124355
+    m_Value: 1.2605019
   m_Ortho:
     m_Target: 0
     speed: 2

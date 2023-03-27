@@ -22,7 +22,7 @@ public class PlayerVie : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogWarning("Il y a plus d'une instance de PlayerHealth dans la scène");
+            Debug.LogWarning("Il y a plus d'une instance de PlayerHealth dans la scï¿½ne");
             return;
         }
 
