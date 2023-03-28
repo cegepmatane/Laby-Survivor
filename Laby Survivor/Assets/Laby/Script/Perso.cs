@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Perso : MonoBehaviour{
-    public float health = 50;
-    public float atk = 10;
+    public float health = 20;
+    public float atk = 1;
     protected float maxHP;
     public bool canBeAttacked = true;
     public int secondsBeforeAttack = 1;

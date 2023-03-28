@@ -29,7 +29,7 @@ public class SkeletonAI : Perso{
         }else{
             distance = Vector3.Distance(player.transform.position, transform.position);
             if (distance < 10){
-                if( distance > 2.0f){
+                if( distance > 1.0f){
                     agent.SetDestination(player.transform.position);
                     //on regle la vitesse
                     agent.speed = 0.7f;
