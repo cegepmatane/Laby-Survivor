@@ -11,6 +11,8 @@ public class ZombieAI : Perso{
 
     void Start(){
         agent = GetComponent<NavMeshAgent>();
+        //on cherche le joueur
+        player = GameObject.Find("XR Origin");
     }
 
     void Update(){

@@ -14,6 +14,8 @@ public class SkeletonAI : Perso{
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        //on cherche le joueur
+        player = GameObject.Find("XR Origin");
     }
 
     // Update is called once per frame
