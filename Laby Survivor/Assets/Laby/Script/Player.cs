@@ -9,11 +9,14 @@ public class Player : Perso {
 
     void Update() {
         if (health <= 0) {
-            transition.SetTrigger("levelChange");
+            if (transition != null) {
+                transition.SetTrigger("levelChange");
+            }
+            new WaitForSeconds(1);
+
+            SceneManager.LoadScene(2);
+            health = maxHP;
         }
 
-        new WaitForSeconds(1);
-
-        SceneManager.LoadScene(2);
     }
 }
