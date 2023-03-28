@@ -13,11 +13,6 @@ public class Perso : MonoBehaviour{
          maxHP = health;
     }
 
-    // Update is called once per frame
-    void Update(){
-        
-    }
-
     public virtual void TakeDamage(float damage){
         if (canBeAttacked){
             health -= damage;

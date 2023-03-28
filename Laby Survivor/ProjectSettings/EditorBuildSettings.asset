@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Laby Survivor/Scene/EndScene.unity
     guid: 9db7ac33ce13ee641a6e26f1d41ed0d7
+  - enabled: 1
+    path: Assets/Laby Survivor/Scene/DeathScene.unity
+    guid: 3f337258b28daa142b369d6695710a66
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
