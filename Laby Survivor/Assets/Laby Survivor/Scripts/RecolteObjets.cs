@@ -11,6 +11,10 @@ public class RecolteObjets : MonoBehaviour
 
         if (ennemie)
         {
+            
+        }
+        else
+        {
             Destroy(gameObject);
         }
     }
