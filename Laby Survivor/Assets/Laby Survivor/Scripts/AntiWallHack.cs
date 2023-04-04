@@ -4,21 +4,30 @@ using UnityEngine;
 
 public class AntiWallHack : MonoBehaviour
 {
-    void OnTriggerEnter(Collider other)
-{
-   if(other.tag == "Player")
-   {
-        Debug.Log("Player détecté");
-      // Empêcher le joueur de se déplacer dans cette direction
-      other.GetComponent<CharacterController>().enabled = false;
-   }
-}
+    public static int walls = 0;
+    private GameObject UIAntiWallhack;
 
-void OnTriggerExit(Collider other) {
-   if(other.tag == "Player")
-    {
-      // Réactiver le CharacterController
-      other.GetComponent<CharacterController>().enabled = true;
+    void Start() {
+        UIAntiWallhack = GameObject.Find("AntiWallhack");
+        UIAntiWallhack.SetActive(false);
     }
+
+    void OnTriggerEnter(Collider other) {
+        if(other.tag == "Wall") {
+            walls++;
+            Debug.Log("Camera détectée");
+            GetComponentInParent<DynamicMoveProvider>().enabled = false;
+            UIAntiWallhack.SetActive(true);
+        }
+    }
+
+    void OnTriggerExit(Collider other) {
+        if(other.tag == "Wall"){
+            walls--;
+            if (walls <= 0) {
+                GetComponentInParent<DynamicMoveProvider>().enabled = true;
+                UIAntiWallhack.SetActive(false);
+            }
+        }
     }
 }

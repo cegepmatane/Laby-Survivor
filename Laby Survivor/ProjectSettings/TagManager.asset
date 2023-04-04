@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Collecte
   - Monster
+  - Wall
   layers:
   - Default
   - TransparentFX
