@@ -13,6 +13,8 @@ public class SkeletonAI : Perso{
     // Start is called before the first frame update
     void Start()
     {
+        health = 50;
+        atk = 5;
         agent = GetComponent<NavMeshAgent>();
         //on cherche le joueur
         player = GameObject.Find("XR Origin");

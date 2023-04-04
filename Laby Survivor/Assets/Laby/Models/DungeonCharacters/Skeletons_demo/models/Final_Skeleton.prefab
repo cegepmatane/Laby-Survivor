@@ -124,12 +124,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
-  atk: 10
+  atk: 1
   canBeAttacked: 1
-  secondsBeforeAttack: 2
+  secondsBeforeAttack: 1
   player: {fileID: 0}
   distance: 0
-  audiosource: {fileID: 7865069670302049381}
+  audiosource: {fileID: 0}
 --- !u!136 &3152034531943157890
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -155,7 +155,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6588d5f04c969164a8750035aae17a73, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
