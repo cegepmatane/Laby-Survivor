@@ -6,9 +6,12 @@ public class AntiWallHack : MonoBehaviour
 {
     public static int walls = 0;
     private GameObject UIAntiWallhack;
+    private GameObject player;
+    private Vector3 beforeWallColl;
 
     void Start() {
         UIAntiWallhack = GameObject.Find("AntiWallhack");
+        player = GameObject.Find("CompleteXROrigin");
         UIAntiWallhack.SetActive(false);
     }
 
@@ -16,7 +19,7 @@ public class AntiWallHack : MonoBehaviour
         if(other.tag == "Wall") {
             walls++;
             Debug.Log("Camera détectée");
-            GetComponentInParent<DynamicMoveProvider>().enabled = false;
+            beforeWallColl = player.transform.position;
             UIAntiWallhack.SetActive(true);
         }
     }
@@ -25,8 +28,8 @@ public class AntiWallHack : MonoBehaviour
         if(other.tag == "Wall"){
             walls--;
             if (walls <= 0) {
-                GetComponentInParent<DynamicMoveProvider>().enabled = true;
                 UIAntiWallhack.SetActive(false);
+                player.transform.position = beforeWallColl;
             }
         }
     }
