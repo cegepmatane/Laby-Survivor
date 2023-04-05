@@ -4,33 +4,38 @@ using UnityEngine;
 
 public class AntiWallHack : MonoBehaviour
 {
-    public static int walls = 0;
-    private GameObject UIAntiWallhack;
-    private GameObject player;
-    private Vector3 beforeWallColl;
+    [SerializeField] LayerMask collisionLayer;
+    [SerializeField] float fadeSpeed;
+    [SerializeField] float sphereCheckSize = .15f;
 
-    void Start() {
-        UIAntiWallhack = GameObject.Find("AntiWallhack");
-        player = GameObject.Find("CompleteXROrigin");
-        UIAntiWallhack.SetActive(false);
+    private Material cameraFadeMat;
+    private bool isCameraFadedOut = false;
+
+    private void Awake() {
+        cameraFadeMat = GetComponent<Renderer>().material;
     }
 
-    void OnTriggerEnter(Collider other) {
-        if(other.tag == "Wall") {
-            walls++;
-            Debug.Log("Camera détectée");
-            beforeWallColl = player.transform.position;
-            UIAntiWallhack.SetActive(true);
-        }
-    }
-
-    void OnTriggerExit(Collider other) {
-        if(other.tag == "Wall"){
-            walls--;
-            if (walls <= 0) {
-                UIAntiWallhack.SetActive(false);
-                player.transform.position = beforeWallColl;
+    private void Update() {
+        if (Physics.CheckSphere(transform.position, sphereCheckSize, collisionLayer, QueryTriggerInteraction.Ignore)) {
+            CameraFade(1f);
+            isCameraFadedOut = true;
+        } else {
+            if (!isCameraFadedOut) {
+                return;
             }
+            CameraFade(0f);
         }
+    }
+
+    public void CameraFade(float targetAlpha) {
+        var fadeValue = Mathf.MoveTowards(cameraFadeMat.GetFloat("_AlphaValue"), targetAlpha, Time.deltaTime * fadeSpeed);
+        cameraFadeMat.SetFloat("_AlphaValue", fadeValue);
+
+        if (fadeValue <= 0.01f) isCameraFadedOut = false;
+    }
+
+    private void OnDrawGizmos() {
+        Gizmos.color = new Color(0f, 1f, 0f, 0.75f);
+        Gizmos.DrawSphere(transform.position, sphereCheckSize);
     }
 }
