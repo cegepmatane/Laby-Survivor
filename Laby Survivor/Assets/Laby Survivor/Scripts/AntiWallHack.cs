@@ -13,6 +13,7 @@ public class AntiWallHack : MonoBehaviour
 
     private void Awake() {
         cameraFadeMat = GetComponent<Renderer>().material;
+        CameraFade(1f);
     }
 
     private void Update() {
