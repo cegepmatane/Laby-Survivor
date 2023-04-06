@@ -27067,6 +27067,7 @@ GameObject:
   - component: {fileID: 932980204}
   - component: {fileID: 932980203}
   - component: {fileID: 932980202}
+  - component: {fileID: 932980206}
   m_Layer: 9
   m_Name: Cube
   m_TagString: Wall
@@ -27106,8 +27107,7 @@ MeshRenderer:
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27145,13 +27145,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932980201}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -112.77, y: -0.64, z: 17.79}
+  m_LocalPosition: {x: -112.77, y: -0.64, z: 20.91}
   m_LocalScale: {x: 3.6762, y: 3.5882, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &932980206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932980201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff1b78d2a0352c4395d1d37d1a37eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &934037592
 PrefabInstance:
   m_ObjectHideFlags: 0
