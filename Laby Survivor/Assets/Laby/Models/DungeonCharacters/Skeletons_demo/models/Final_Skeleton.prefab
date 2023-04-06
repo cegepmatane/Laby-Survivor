@@ -129,7 +129,7 @@ MonoBehaviour:
   secondsBeforeAttack: 1
   player: {fileID: 0}
   distance: 0
-  audiosource: {fileID: 0}
+  audiosource: {fileID: 7865069670302049381}
 --- !u!136 &3152034531943157890
 CapsuleCollider:
   m_ObjectHideFlags: 0

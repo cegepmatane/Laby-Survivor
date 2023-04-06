@@ -1628,7 +1628,12 @@ PrefabInstance:
     - target: {fileID: 9014170783809206330, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: field of view
-      value: 109.32801
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014170783809206330, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: far clip plane
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
@@ -1694,6 +1699,7 @@ MonoBehaviour:
   atk: 10
   canBeAttacked: 1
   secondsBeforeAttack: 2
+  transition: {fileID: 0}
 --- !u!114 &7699212419942555703 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4246964508224590622, guid: 895f6f3c2d334633b5800312285058d2,
